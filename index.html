@@ -94,13 +94,27 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '480115518845553');
-fbq('track', "PageView");</script>
+fbq('track', "PageView");
+fbq('track', 'ViewContent');</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=480115518845553&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<script type="text/javascript">
+		    var callback = function(formatted_number, mobile_number) {
+		      // formatted_number: number to display, in the same format as
+		      //        the number passed to _googWcmGet().
+		      //        (in this case, '1-800-123-4567')
+		      // mobile_number: number formatted for use in a clickable link
+		      //        with tel:-URI (in this case, '+18001234567')
+		      var e = document.getElementById("number_link");
+		      e.href = "tel:" + mobile_number;
+		      e.innerHTML = "";
+		      e.appendChild(document.createTextNode(formatted_number));
+		    };
+		  </script>    
 </head>
-<body>
+<body onload="_googWcmGet(callback, '1-818-650-3225')">
 
 <!-- =========================
      PRE LOADER       
@@ -187,7 +201,7 @@ src="https://www.facebook.com/tr?id=480115518845553&ev=PageView&noscript=1"
 		</div>
         <div class="row" style="padding-bottom:10%;">
                 <div class="col-md-12 text-center">
-                    <a href="tel:+1818-650-3225" class="btn btn-info btn-lg" id="ac-callHeaderBtn" role="button"><span style="color:#f0f8ff"> Call Us</span> <br> (818) 650-3225</a><br>
+                    <a href="tel:18186503225" id="number_link" class="btn btn-info btn-lg" role="button"><span style="color:#f0f8ff"> Call Us</span> <br> 1-818-650-3225</a><br>
                     <h3 style="color:white">Quick Quote</h3>
                     <p style="color:white">We Will Call You Within 1 Business Day </p>
                      <form action="https://formspree.io/online@therightchoicehvac.com" id="ac-newsletterForm" method="POST">
@@ -831,7 +845,7 @@ They preformed an amazing full unit installation in our office building.  From t
         <h2>Ready For Service?</h2>
         <div class="col-md-6 pull-right">
             <h3 class="heading"> Call Us</h3>
-            <a href="tel:+18186503225" class="contact-link expand-form" id="ac-callFooterBtn" role="button"><i class="fa fa-phone" style="font-size:16px"></i> Click Here</a>
+            <a href="tel:18186503225" id="number_link" class="contact-link expand-form" id="ac-callFooterBtn" role="button"><i class="fa fa-phone" style="font-size:16px"></i> <span class="number">1-818-650-3225</span></a>
         </div>
 		<div class="col-md-6 pull-left">
 			
@@ -993,6 +1007,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K4JLV8');</script>
 <!-- End Google Tag Manager -->
+   
 
 </body>
 </html>
