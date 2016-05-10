@@ -187,25 +187,29 @@ src="https://www.facebook.com/tr?id=480115518845553&ev=PageView&noscript=1"
 		</div>
         <div class="row" style="padding-bottom:10%;">
                 <div class="col-md-12 text-center">
-                    <a href="tel:+1818-650-3225" class="btn btn-info btn-lg" id="ac-callHeaderBtn" role="button"><span style="color:#f0f8ff"> Call Us</span> <br> (818) 650-3225</a><br><br>
-                    <p style="color:white">Or Submit Your Name, Email </p>
-                     <form action="https://formspree.io/online@therightchoicehvac.com" id="ac-topForm" method="POST">
+                    <a href="tel:+1818-650-3225" class="btn btn-info btn-lg" id="ac-callHeaderBtn" role="button"><span style="color:#f0f8ff"> Call Us</span> <br> (818) 650-3225</a><br>
+                    <h3 style="color:white">Quick Quote</h3>
+                    <p style="color:white">We Will Call You Within 1 Business Day </p>
+                     <form action="https://formspree.io/online@therightchoicehvac.com" id="ac-newsletterForm" method="POST">
                         <div class="form-group">
                          <label for="name" style="color:white">Name:</label>
                          <input type="text" name="name">
                         </div>
                          <div class="form-group">
-                             <label for="_replyto" style="color:white">Email</label>
+                             <label for="_replyto" style="color:white">Email:</label>
                             <input type="email" name="_replyto"> 
                          </div>
                          <div class="form-group">
-                            <label for="phone" style="color:white">Phone</label>
+                            <label for="phone" style="color:white">Phone:</label>
                              <input type="text" name="phone">
                          </div>
-                        <div class="form-group">
-                              <label for="quoteDescription" style="color:white">Description:</label><br>
-                              <textarea name="quoteDescription"></textarea>
-                        </div>
+                        <select>
+                          <option value="select">Select Type:</option>
+                          <option value="ac repair">AC Repair</option>
+                          <option value="ac install">AC Install</option>
+                          <option value="ac service">AC Service</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
                         <input type="submit" value="Send">
                     </form> 
                 </div>
